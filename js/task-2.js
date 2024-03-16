@@ -1,15 +1,13 @@
 function calcAverageCalories(days) {
   if (days.length === 0) {
-    return 0; // Повертаємо 0, якщо немає даних
+    return 0; 
   }
-  
-  // Сума калорій за всі дні
   const totalCalories = days.reduce((acc, day) => acc + day.calories, 0);
   
-  // Середнє значення
+  
   const averageCalories = totalCalories / days.length;
   
-  return Math.round(averageCalories); // Повертаємо середнє значення, округлене до цілого числа
+  return Math.round(averageCalories); 
 }
 console.log(
     calcAverageCalories([
